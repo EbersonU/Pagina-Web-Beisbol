@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.titulo1{
+    font-size: 3.5rem;
+}
+
+.titulo2{
+    font-size: 1.5rem;
+}
+
+.titulo1negro{
+    font-size: 3rem;
+    color: black;
+}
+
+.titulo2negro{
+    font-size: 1rem;
+    color: black;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.oscuro {
+    filter: brightness(50%) grayscale(50%);
+}
+
+.centrar-texto {
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+.margen{
+    margin-top: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.container-equipo{
+    justify-content: center;
+}
+
+.card-equipo{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.parrafo-estadio{
+    margin-top: 2rem;
+}
+
+.parrafo-centro{
+    display: flex; justify-content: center;
+    align-items: center; /* Centrar verticalmente */ 
+    height: 60vh; 
+    margin: 0;
+}
+
+.navegador{
+    z-index: 1000;
+    position: fixed;
+}
+
+.logo{
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 1.6em;
+}
+
+.logo img{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: -240px;
+    margin-top: -250px;
+}
+
+.card1 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+  .card1:hover {
+    transform: translateY(-25px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.color-nav{
+    background-color: #0346aa;
+}
+
+.color-btn{
+    color: #0346aa;
+}
+
+.twitter{
+    background-color: #000000;
+}
+
+.twitter:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.fa-twitter:before {
+    font-size: 1.7rem;
+}
+
+.tiktok{
+    background-color: #000000;
+    border: 2px solid #FE2C55; /* Borde en color rojo */
+    color: #FFFFFF; /* Texto blanco */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    margin-left: 12px;
+}
+
+.tiktok:hover {
+    background-color: #69C9D0; /* Cambia a aqua al pasar el mouse */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.fa-tiktok:before {
+    font-size: 1.7rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.facebook:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.fa-facebook:before {
+    font-size: 1.7rem;
+}
+
+.youtube {
+	background-color: #ffffff;
+    margin-left: 12px;
+}
+
+.youtube:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.bi-youtube:before {
+    font-size: 1.4rem;
+    color: #ff0000;
+}
+
+
+.instagram {
+    margin-left: 1rem;
+    margin-right: 1rem;
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
+
+.instagram:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.fa-instagram:before {
+    font-size: 1.7rem;
+}
+
+.social-icons {
+	gap: 1.5rem;
+    margin-left: 3.3rem;
+}
+
+.social-icons a {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+    text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons a i {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+

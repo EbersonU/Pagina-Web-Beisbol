@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Beisbol Venezolano</title>
+  </head>
+  <body style="background-color: #dfdede">
+    <nav class="navbar navbar-expand-lg color-nav fixed-top">
+      <div class="container-fluid">
+        <p class="logo"><img src="img/logo.png" alt=""></p>
+        <a class="navbar-brand text-white" href="#carouselExampleCaptions">Beisbol Venezolano</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#equipos">Equipos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#jugadores">Jugadores</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img
+            src="img/estadio_recortada.jpg"
+            class="d-block w-100 oscuro"
+            alt="..."
+            style="height: 40rem;"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="titulo1">Estadios De Beisbol</h5>
+            <p class="titulo2">
+              Conoce los Estadio de cada Equipo del Beisbol Venezolano.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="img/Equipos.png" class="d-block w-100 oscuro" alt="..." style="height: 40rem;" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="titulo1">Equipos del Beisbol Venezolano</h5>
+            <p class="titulo2">
+              Conoce la historia de cada uno de los equipos del Beisbol
+              Venezolano.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="img/jugaRec.jpg" class="d-block w-100 oscuro" alt="..." style="height: 40rem;" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="titulo1">Jugadores Destacados</h5>
+            <p class="titulo2">
+              Conoce los jugadores destacados del Beisbol Venezolano.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="margen" id="equipos">
+      <div class="centrar-texto">
+        <h5 class="titulo1negro">Equipos de la LVBP</h5>
+        <p class="titulo2negro">
+          Los equipos de la Liga Venezolana de Béisbol Profesional (LVBP), son conocidos por su talento y pasión. Estos clubes no solo compiten por títulos, sino que también han producido jugadores destacados que han dejado una marca en el béisbol tanto nacional como internacional. Cada temporada, los equipos de la LVBP crean momentos inolvidables y fortalecen el legado del béisbol venezolano.
+        </p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4 container-equipo">
+        <div class="card mb-3 card-equipo" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/tigres.png" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Tigres de Aragua</h5>
+                <p class="card-text">
+                  Los Tigres de Aragua son un equipo de béisbol venezolano perteneciente a la Liga Venezolana de Béisbol Profesional desde la temporada 1965-1966. Su sede es el Estadio José Pérez Colmenares, ubicado en la ciudad de Maracay, Venezuela.
+                </p>
+                <p class="card-text">
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #0346aa;">
+                    Ver Estadio
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">José Pérez Colmenares</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/estadioTigres.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                          <p class="card-text parrafo-estadio">
+                            El "José Pérez Colmenares", ubicado en Maracay estado Aragua uno de los estadios que posee múltiples atributos que lo catalogan como uno de los mejores del país, fue inaugurado en 1965 con motivo de realizarse en Maracay una serie internacional de béisbol que llevó por nombre Copa "Jhon Fitzgerald Kennedy" y poco después se convertiría en la cueva de los Tigres de Aragua, que hicieron su estreno en la Liga Venezolana de Béisbol Profesional en la temporada 1965-66.
+
+                            Con una capacidad para 12.650 personas, el “José Pérez Colmenares” recibe a sus fanáticos con una plazoleta donde se reúne la afición antes y después del juego con un espacio de áreas verdes que dan la sensación de estar llegando a cualquiera de los emblemáticos estadios de las Grandes Ligas.
+
+                            Entre los grandes momentos del béisbol que se han vivido en este recinto, se pueden contar la Serie del Caribe 2006 en la que Venezuela se corona campeón y la más extraordinaria remontada que se recuerde en la historia de la pelota profesional venezolana en la final de la zafra 2006-2007 cuando los Tigres de Aragua vencieron a los Navegantes del Magallanes volteando una ventaja de 8 carreras en el noveno episodio y llevarse así el sexto título los bengalíes.
+
+                            Una de las premisas de la actual gerencia del club es adecuar año a año la infraestructura del José Pérez Colmenares para los cada vez más numerosos fanáticos, siendo por ello tomado en cuenta como uno de los mejores parques de pelota en Venezuela y del Caribe.
+
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 card-equipo" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Navegantes.png" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Navegantes del Magallanes</h5>
+                <p class="card-text">
+                  Navegantes del Magallanes es un equipo de béisbol profesional de la Liga Venezolana de Béisbol Profesional, con sede en Valencia, estado Carabobo, Venezuela. Fundado el 26 de octubre de 1917.
+                </p>
+                <p class="card-text">
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="background-color: #0346aa;">
+                    Ver Estadio
+                  </button>
+                  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">José Bernardo Pérez</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/Magallanes1estadio.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                          <p class="card-text parrafo-estadio">
+                            El Estadio José Bernardo Pérez es una infraestructura deportiva para la práctica de béisbol, ubicada en la ciudad de Valencia, capital del estado Carabobo, en la región centro norte de Venezuela. Es la sede de uno de los equipos más importantes y con una de las aficiones más grandes del país, los Navegantes del Magallanes.
+
+Tiene capacidad para unos 16 000 espectadores, posee una pizarra electrónica, sillas en las tribunas, sistema de iluminación, cabinas para transmisión por radio y televisión, y estacionamiento para vehículos, entre otras comodidades.
+
+Un hecho curioso del estadio es que, en el diseño del campo de béisbol, el triángulo del home apunta hacia el sur, cuando en la gran mayoría de los campos de béisbol del mundo se acostumbra que apunte hacia el norte.
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 card-equipo" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Leones-del-Caracas.png" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Leones del Caracas</h5>
+                <p class="card-text">
+                  El Caracas Base Ball Club C.A. o conocido por su nombre comercial como los Leones del Caracas, es un equipo de béisbol profesional. Es uno de los 8 clubes que conforman la Liga Venezolana de Béisbol Profesional.
+                </p>
+                <p class="card-text">
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="background-color: #0346aa;">
+                    Ver Estadio
+                  </button>
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Monumental de Caracas "Simón Bolívar"</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/leones estadio.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                          <p class="card-text parrafo-estadio">
+                            El Estadio Monumental de Caracas "Simón Bolívar" también conocido como Estadio de Béisbol de La Rinconada, es un moderno estadio para la práctica de béisbol en la ciudad de Caracas, específicamente en el sector de La Rinconada, a un lado del Poliedro de Caracas, el Hipódromo de la Rinconada y del futuro Estadio Nacional de Fútbol de Venezuela; en la parroquia Coche, al sur del municipio Libertador y del Distrito Capital y al oeste del área metropolitana de Caracas, Venezuela. El estadio es el más moderno de América y con la pantalla más grande, tiene capacidad para recibir a 38000 espectadores sentados, pudiendo albergar otros 2.000 espectadores más de pie en el jardín central. Y alcanzando un máximo de 50000 personas en conciertos. Es el más grande construido para la práctica de béisbol en Venezuela y el segundo más grande de América Latina, después del Estadio Latinoamericano de La Habana, cuya capacidad es de 50 000 aficionados aprox (ya que no cuenta con butacas en su totalidad).
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 card-equipo" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/tiburones.png" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Tiburones de La Guaira</h5>
+                <p class="card-text">
+                  Los Tiburones de La Guaira son un equipo de béisbol venezolano perteneciente a la LVBP. Han tenido como estadio local desde su fundación en 1962 hasta 2019 al Estadio Universitario y actualmente en el Estadio Jorge Luis García Carneiro.
+                </p>
+                <p class="card-text">
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="background-color: #0346aa;">
+                    Ver Estadio
+                  </button>
+                  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Jorge Luis García Carneiro</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/tiburonesEsradio.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                          <p class="card-text parrafo-estadio">
+                            El Estadio Jorge Luis García Carneiro (también llamado alternativamente Estadio Forum de La Guaira) es un estadio de béisbol de propiedad pública en el sector de Pavero de la parroquia Macuto, en el municipio Vargas, estado La Guaira, al centro-norte de Venezuela, cuya administración y gestión depende del gobierno regional de La Guaira.
+
+Es una de las sedes de la Liga Venezolana de Béisbol Profesional. Tuvo un costo de 270 millones de bolívares y una capacidad para 14.300 espectadores.
+
+El complejo tiene estacionamientos para 3500 vehículos, e incluye un centro comercial, hotel, Feria de comida, terraza vip con jacuzzis y un casino.
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 card-equipo" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/caribes.png" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Caribes de Anzoátegui</h5>
+                <p class="card-text">
+                  Los Caribes de Anzoátegui es un equipo de béisbol perteneciente a la Liga Venezolana de Béisbol Profesional. Fundado en 1987 como Caribes de Oriente, disputa sus partidos en el Estadio Alfonso "Chico" Carrasquel de la ciudad de Puerto La Cruz - Estado Anzoátegui.
+                </p>
+                <p class="card-text">
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="background-color: #0346aa;">
+                    Ver Estadio
+                  </button>
+                  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Alfonso "Chico" Carrasquel</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/caribeEstadio.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                          <p class="card-text parrafo-estadio">
+                            El Alfonso "Chico" Carrasquel, es un Estadio de Béisbol, ubicado en el Oriente de Venezuela, en el Estado Anzoátegui, más específicamente en la ciudad de Puerto La Cruz, es usado regularmente para la práctica de este deporte y sirve como sede del equipo Caribes de Anzoátegui, posee una capacidad aproximada para 18 mil espectadores, y fue sometido a un proceso de remodelación que permitió que fuera abierto al público en el año de 1991, posee todas las comodidades de un estadio moderno de su tipo, oficinas administrativas, sala de árbitros, sistema de riego de la grama, pizarra electrónica, área de servicios médicos, cabinas para la transmisión por televisión y radio, lavandería, gimnasio, etc. Debe su nombre al jugador de la grandes ligas Alfonso Carrasquel Colón más conocido como Chico Carrasquel.
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 card-equipo" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/cardenales.png" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Cardenales de Lara</h5>
+                <p class="card-text">
+                  Los Cardenales de Lara es un equipo de béisbol perteneciente a la LVBP en Venezuela, fundado el 5 de noviembre de 1942; (como Cardenales de Carora). Tiene como sede el Estadio Antonio Herrera Gutiérrez de Barquisimeto.
+                </p>
+                <p class="card-text">
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5" style="background-color: #0346aa;">
+                    Ver Estadio
+                  </button>
+                  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Antonio Herrera Gutiérrez</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/estadio-lara.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                          <p class="card-text parrafo-estadio">
+                            El Estadio Don Antonio Herrera Gutiérrez es una infraestructura deportiva multiusos en Barquisimeto, Venezuela. Se usa principalmente para juegos de béisbol y sirve de hogar de Cardenales de Lara. Tiene capacidad para 20 450 espectadores. Fue construido entre los años 1968 y 1969 y finalmente es inaugurado en el año 1970. Desde dicho año se ha convertido en la sede del equipo Cardenales de Lara.
+
+                            Es de hacer notar que al momento de su inauguración se llamó simplemente Estadio Barquisimeto y el Alcalde para esa época Raúl Antonio Colmenárez en el año 1991 en un acto de honor al fundador de Cardenales de Lara le coloco el nombre actual luego de que los pájaros Rojos ganaran su primer campeonato, y en honor a Antonio Herrera Gutiérrez, quien fuera propietario del equipo hasta su trágica muerte el 16 de marzo de 1969.
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 card-equipo" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/bravos.png" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Bravos de Margarita</h5>
+                <p class="card-text">
+                  Bravos de Margarita, es un equipo de béisbol perteneciente a la Liga Venezolana de Béisbol Profesional. Fundado el 12 de julio de 2007, sustituyó como franquicia a Pastora de Los Llanos, convirtiéndose así en la franquicia más joven de la liga.
+                </p>
+                <p class="card-text">
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6" style="background-color: #0346aa;">
+                    Ver Estadio
+                  </button>
+                  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Estadio Nueva Esparta</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/bravosestadio.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                          <p class="card-text parrafo-estadio">
+                            El Estadio Nueva Esparta (también conocido como Estadio Guatamare) es un estadio de béisbol ubicado en la Isla de Margarita, en el estado Nueva Esparta, en el oriente insular de Venezuela. Tiene capacidad para más de 18 mil espectadores, posee 8 torres de iluminación y estacionamiento asfaltado. El estadio es sede del equipo Bravos de Margarita de la Liga Venezolana de Béisbol Profesional.
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 card-equipo" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/aguilas_del_zulia.png" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Águilas del Zulia</h5>
+                <p class="card-text">
+                  Las Águilas del Zulia son un equipo de béisbol perteneciente a la Liga Venezolana de Béisbol Profesional en Venezuela, fundado el 1 de marzo de 1969. Tiene su sede en el Estadio Luis Aparicio El Grande de Maracaibo.
+                </p>
+                <p class="card-text">
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- INICIO DEL MODAL INFO DE ESTADIO --------------------->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7" style="background-color: #0346aa;">
+                    Ver Estadio
+                  </button>
+                  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Luis Aparicio "El Grande"</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/zuliaestadio.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                          <p class="card-text parrafo-estadio">
+                            El Estadio Luis Aparicio "El Grande", es una instalación deportiva multiusos dedicada específicamente a la práctica del béisbol que está ubicado en la ciudad de Maracaibo, capital del estado Zulia, en la parte más occidental de Venezuela. Llamado inicialmente Estadio Universitario de Maracaibo, por encontrarse enclavado en terrenos de la Universidad del Zulia (LUZ) Fue posteriormente nombrado Estadio Luis Aparicio "El Grande" de Maracaibo en homenaje al beisbolista Luis Aparicio Ortega, apodado "El Grande de Maracaibo" por sus hazañas en el deporte de los diamantes y padre del Salón de la Fama de la MLB Luis Aparicio Montiel.
+
+El estadio es hermano gemelo del Estadio Universitario de Caracas, ya que su construcción en esencia es réplica del coso situado en Los Chaguaramos-Bello Monte, en la capital de la República. Posee un aforo total de 25.000 personas el segundo de mayor capacidad del país después del Estadio La Ceiba, en Ciudad Guayana, estado Bolívar que alberga a 30 mil personas.
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                  <!-------------- FIN DEL MODAL INFO DE ESTADIO --------------------->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="margen" id="jugadores">
+      <div class="centrar-texto">
+        <h5 class="titulo1negro">Jugadores Destacados</h5>
+        <p class="titulo2negro">
+          Conocidos por su increíble talento y dedicación, varios jugadores
+          venezolanos han dejado una huella imborrable tanto en la Liga
+          Venezolana de Béisbol Profesional (LVBP) como en las Grandes Ligas
+          (MLB). Estos atletas no solo han destacado por sus habilidades en el
+          campo, sino también por su pasión, determinación y compromiso con el
+          deporte. Sus impresionantes actuaciones han sido fundamentales para
+          sus equipos, brindando momentos memorables y contribuyendo al legado
+          del béisbol venezolano en el escenario internacional.
+        </p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/miguelCabrera.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Miguel Cabrera</h5>
+              <p class="card-text">
+                José Miguel Cabrera Torres (Maracay, 18 de abril de 1983) es un
+                exbeisbolista profesional venezolano. En la MLB jugó para los
+                Marlins de Florida desde el año 2003 hasta 2007, y luego pasó a
+                formar parte del equipo Tigres de Detroit desde el año 2008
+                hasta su retiro en 2023.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/ronalA.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Ronald Acuña Jr</h5>
+              <p class="card-text">
+                Ronald José Acuña Blanco (La Guaira, 18 de diciembre de 1997) es
+                un beisbolista venezolano que juega para los Bravos de Atlanta
+                de las Grandes Ligas de Béisbol (MLB). En la LVBP, juega para
+                los Tiburones de La Guaira.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/joseAltuve.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">José Altuve</h5>
+              <p class="card-text">
+                José Carlos Altuve Linares (Puerto Cabello, 6 de mayo de 1990)1​
+                es un beisbolista profesional venezolano, que juega como segunda
+                base para los Astros de Houston de las Grandes Ligas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/salvadorP.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Salvador Pérez</h5>
+              <p class="card-text">
+                Salvador Johan Pérez Díaz (Valencia, 10 de mayo de 1990) es un
+                receptor venezolano de béisbol profesional que juega para los
+                Kansas City Royals de las Grandes Ligas. Ha ganado cinco guantes
+                de oro, tres bates de plata, además de premio al novato del año
+                en la Liga Venezolana de Béisbol Profesional 2012/13.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/bobAbreu.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Bobby Abreu</h5>
+              <p class="card-text">
+                Bob Kelly Abreu (nació el 11 de marzo de 1974, en Turmero,
+                Aragua, Venezuela) deportista y empresario venezolano,
+                expelotero de la Grandes Ligas de Béisbol estadounidense, es
+                conocido como Bobby Abreu, en Estados Unidos, y llamado también
+                El Come Dulce en su país, Venezuela.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/omarV.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Omar Vizquel</h5>
+              <p class="card-text">
+                Omar Enrique Vizquel González (Caracas, 24 de abril de 1967), es
+                un ex campocorto que inicio su carrera de beisbolistas en los
+                Leones de Caracas en Venezuela y que jugó en las Grandes Ligas
+                de Béisbol
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/pabloS.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Pablo Sandoval</h5>
+              <p class="card-text">
+                Pablo Emilio Sandoval (11 de agosto de 1986, en Puerto Cabello,
+                Carabobo, Venezuela), apodado "Kung Fu Panda" o "Big Pablo", es
+                un jugador de Grandes Ligas que juega para los Gigantes de San
+                Francisco en la MLB. También jugó para los Navegantes del
+                Magallanes en la LVBP, y actualmente juega para los Cangrejeros
+                de Santurce en la Liga Roberto Clemente de Puerto Rico.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/i.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Alcides Escobar</h5>
+              <p class="card-text">
+                Alcides Escobar (nacido el 16 de diciembre de 1986 en La Sabana,
+                Distrito Federal) es un campocorto venezolano de béisbol
+                profesional de las Grandes Ligas que actualmente es jugador de
+                los acereros de monclova, Juega para los Tiburones de La Guaira
+                en la LVBP.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/endyC.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Endy Chávez</h5>
+              <p class="card-text">
+                Endy Chávez (Valencia (Venezuela), 7 de febrero de 1978) es un
+                ex-beisbolista profesional venezolano que jugaba en la posición
+                de jardinero. En la Major League Baseball era ficha de Baltimore
+                Orioles desde diciembre de 2011 mientras que en su natal
+                Venezuela jugaba para Navegantes del Magallanes. También vistió
+                la camiseta de otros equipos como los Tigres de Aragua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/ronnyC.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Ronny Cedeño</h5>
+              <p class="card-text">
+                Ronny Alexander Salazar Cedeño (Puerto Cabello, Venezuela, 2 de
+                febrero de 1983), es un beisbolista profesional venezolano que
+                juega en la posición de campocorto. En las Grandes Ligas ha
+                jugado con los equipos Chicago Cubs, Pittsburgh Pirates, New
+                York Mets, y más.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/wilsonR.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Wilson Ramos</h5>
+              <p class="card-text">
+                Wilson Abraham Ramos Campos (Valencia, Venezuela, 10 de agosto
+                de 1987) es un beisbolista profesional venezolano que juega en
+                la posición de receptor. En el torneo de la Liga Venezolana de
+                Béisbol Profesional en su tierra natal, juega con los Bravos de
+                Margarita.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card1 h-100">
+            <img src="img/alexisAma.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Alexi Amarista</h5>
+              <p class="card-text">
+                Alexi José Amarista (nacido el 6 de abril de 1989) es un
+                infielder y jardinero central venezolano de béisbol profesional
+                que juega con el Águila de Veracruz de la Liga Mexicana de
+                Béisbol. Anteriormente jugó en Grandes Ligas (MLB) con Los
+                Angeles Angels of Anaheim entre 2011 y 2012, los San Diego
+                Padres entre 2012 y 2016, y los Colorado Rockies en 2017.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer class=" text-dark pt-5 pb-4" style="background-color: #dfdede">
+    <div class="container text-center text-md-start">
+      <div class="row text-center text-md-start">
+        <hr class="mb-4" />
+
+        <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-5">
+          <div class="social-icons">
+              <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                      <a href="https://www.facebook.com/lvbpoficial" class="facebook"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://www.instagram.com/lvbp_oficial/profilecard/?igsh=eTFxcTZ1ZXU0aGht" class="instagram"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://x.com/LVBP_Oficial?t=WZAcFtVg0Dl8973SGFmvbg&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://youtube.com/@lvbp_oficial?si=68ivwsZT8baoFCtK" class="youtube"><i class="bi bi-youtube"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://www.tiktok.com/@lvbp_oficial?_t=8rXBEo1Oe5g&_r=1" class="tiktok"><i class="bi bi-tiktok"></i></a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="text-center mb-2">
+          <p>&copy; 2024 Eberson Urbano. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
